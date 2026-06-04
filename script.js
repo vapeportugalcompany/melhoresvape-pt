@@ -1,4 +1,28 @@
 ﻿document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('a[href^="http"]').forEach((link) => {
+        try {
+            const url = new URL(link.href, window.location.href);
+            if (url.origin !== window.location.origin) {
+                link.setAttribute('target', '_blank');
+                link.setAttribute('rel', 'noopener noreferrer');
+            }
+        } catch {
+            // Ignore malformed URLs and keep existing behavior.
+        }
+    });
+
+    document.querySelectorAll('img').forEach((img) => {
+        img.setAttribute('decoding', 'async');
+        if (!img.classList.contains('slide-img')) {
+            img.setAttribute('loading', 'lazy');
+        }
+    });
+
+    const heroImage = document.querySelector('.slide-img');
+    if (heroImage) {
+        heroImage.removeAttribute('loading');
+        heroImage.setAttribute('fetchpriority', 'high');
+    }
 
     // --- Mobile Menu ---
     const hamburger = document.getElementById('hamburger-btn');
@@ -84,7 +108,7 @@
 
             // Use image if available, otherwise use placeholder
             const slideContent = slide.imgSrc
-                ? `<img src="${slide.imgSrc}" alt="${slide.title}" style="width: 100%; height: 100%; object-fit: contain; border-radius: 50%;">`
+                ? `<img src="${slide.imgSrc}" alt="${slide.title}" decoding="async" fetchpriority="high" style="width: 100%; height: 100%; object-fit: contain; border-radius: 50%;">`
                 : `<div style="font-size: 5rem;">${slide.imgPlaceHolder}</div>`;
 
             // Inline Styles for functionality (basic) + CSS classes

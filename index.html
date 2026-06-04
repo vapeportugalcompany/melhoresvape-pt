@@ -7,12 +7,22 @@
   <title>MelhoresVape.pt | Vapes Descartáveis e Cigarro Eletrónico</title>
   <meta name="description"
     content="MelhoresVape.pt reúne vapes descartáveis, cigarro eletronico, sabores de vape e opções sem nicotina para adultos em Portugal. Um vape shop com seleção comercial clara e entrega rápida.">
-  <meta name="keywords"
-    content="cigarro eletronico,vape,vapes,vap,vape portugal,vape descartável,vaper,vapers,vapping,vape shop,sabores de vape,vape descartaveis,cigarro eletrónico descartável,sem nicotina">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://melhoresvape.pt/">
   <meta property="og:title" content="MelhoresVape.pt | Vapes Descartáveis e Cigarro Eletrónico">
   <meta property="og:description"
     content="Vape shop em Portugal com vapes descartáveis, cigarro eletrónico, sabores de vape e opções sem nicotina para adultos.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://melhoresvape.pt/">
+  <meta property="og:image"
+    content="https://melhoresvape.pt/images/Hero-Vaper-Desechable-Cigarrillo-Electronico-Muchas-Caladas.png">
+  <meta property="og:locale" content="pt_PT">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MelhoresVape.pt | Vapes Descartáveis e Cigarro Eletrónico">
+  <meta name="twitter:description"
+    content="Vape shop em Portugal com vapes descartáveis, cigarro eletrónico, sabores de vape e opções sem nicotina para adultos.">
+  <meta name="twitter:image"
+    content="https://melhoresvape.pt/images/Hero-Vaper-Desechable-Cigarrillo-Electronico-Muchas-Caladas.png">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,42 +40,31 @@
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   <link rel="manifest" href="site.webmanifest" />
 
-  <!-- JSON-LD: add Offer/FAQ/Review/Article only when matching visible, verified page data exists. -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "OnlineStore",
+          "@type": "Organization",
           "@id": "https://melhoresvape.pt/#organization",
           "name": "MelhoresVape.pt",
+          "description": "MelhoresVape.pt reúne vapes descartáveis, cigarro eletronico, sabores de vape e opções sem nicotina para adultos em Portugal. Um vape shop com seleção comercial clara e entrega rápida.",
           "url": "https://melhoresvape.pt/",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://melhoresvape.pt/favicon-96x96.png",
-            "width": 96,
-            "height": 96
+          "logo": "https://melhoresvape.pt/favicon-96x96.png",
+          "image": "https://melhoresvape.pt/images/Hero-Vaper-Desechable-Cigarrillo-Electronico-Muchas-Caladas.png",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "info@vapeportugal.pt",
+            "telephone": "+34 663 167 736",
+            "contactType": "customer support",
+            "areaServed": "PT",
+            "availableLanguage": "pt-PT"
           },
-          "contactPoint": [
-            {
-              "@type": "ContactPoint",
-              "email": "info@melhoresvape.pt",
-              "telephone": "+34 663 167 736",
-              "contactType": "customer support",
-              "areaServed": "PT",
-              "availableLanguage": [
-                "pt-PT"
-              ]
-            }
-          ],
           "areaServed": {
             "@type": "Country",
             "name": "Portugal"
           },
-          "availableLanguage": [
-            "pt-PT",
-            "Portuguese"
-          ]
+          "availableLanguage": "pt-PT"
         },
         {
           "@type": "WebSite",
@@ -78,11 +77,8 @@
           "inLanguage": "pt-PT"
         },
         {
-          "@type": [
-            "WebPage",
-            "CollectionPage"
-          ],
-          "@id": "https://melhoresvape.pt/#webpage",
+          "@type": "CollectionPage",
+          "@id": "https://melhoresvape.pt/#collection",
           "url": "https://melhoresvape.pt/",
           "name": "MelhoresVape.pt | Vapes Descartáveis e Cigarro Eletrónico",
           "description": "MelhoresVape.pt reúne vapes descartáveis, cigarro eletronico, sabores de vape e opções sem nicotina para adultos em Portugal. Um vape shop com seleção comercial clara e entrega rápida.",
@@ -94,7 +90,7 @@
             "@id": "https://melhoresvape.pt/#organization"
           },
           "mainEntity": {
-            "@id": "https://melhoresvape.pt/#featured-products"
+            "@id": "https://melhoresvape.pt/#itemlist"
           },
           "breadcrumb": {
             "@id": "https://melhoresvape.pt/#breadcrumb"
@@ -107,448 +103,176 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "Home",
+              "name": "Início",
               "item": "https://melhoresvape.pt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Produtos na VapePortugal.pt",
+              "item": "https://vapeportugal.pt/"
             }
           ]
         },
         {
           "@type": "ItemList",
-          "@id": "https://melhoresvape.pt/#featured-products",
-          "name": "Produtos destacados de vape descartável",
-          "itemListOrder": "https://schema.org/ItemListOrderAscending",
+          "@id": "https://melhoresvape.pt/#itemlist",
+          "name": "Lista de modelos apresentados na página",
           "numberOfItems": 18,
           "itemListElement": [
             {
               "@type": "ListItem",
               "position": 1,
-              "item": {
-                "@type": "Product",
-                "@id": "https://melhoresvape.pt/#product-master-70k",
-                "name": "Master 70K",
-                "image": "https://melhoresvape.pt/images/products/vapsolo-master-70k-vape-descartavel-portugal.png",
-                "description": "O mais recente da VapSolo com 70000 puffs e sabor intenso para uma experiência premium.",
-                "url": "https://vapeportugal.pt/products/vapsolo-master-70k-vape-descartavel-portugal",
-                "category": "Vapes descartáveis",
-                "brand": {
-                  "@type": "Brand",
-                  "name": "VapSolo"
-                },
-                "additionalProperty": [
-                  {
-                    "@type": "PropertyValue",
-                    "name": "Puffs",
-                    "value": "70000 puffs"
-                  }
-                ]
-              }
+              "name": "Master 70K",
+              "url": "https://vapeportugal.pt/products/vapsolo-master-70k-vape-descartavel-portugal"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "item": {
-                "@type": "Product",
-                "@id": "https://melhoresvape.pt/#product-mars-50k",
-                "name": "Mars 50K",
-                "image": "https://melhoresvape.pt/images/products/vapsolo-mars-50k-vape-descartavel-portugal.png",
-                "description": "Um modelo versátil da VapSolo, com potência consistente e 50000 puffs.",
-                "url": "https://vapeportugal.pt/products/vapsolo-mars-50k-vape-descartavel-portugal",
-                "category": "Vapes descartáveis",
-                "brand": {
-                  "@type": "Brand",
-                  "name": "VapSolo"
-                },
-                "additionalProperty": [
-                  {
-                    "@type": "PropertyValue",
-                    "name": "Puffs",
-                    "value": "50000 puffs"
-                  }
-                ]
-              }
+              "name": "Mars 50K",
+              "url": "https://vapeportugal.pt/products/vapsolo-mars-50k-vape-descartavel-portugal"
             },
             {
               "@type": "ListItem",
               "position": 3,
-              "item": {
-                "@type": "Product",
-                "@id": "https://melhoresvape.pt/#product-king-pro-40k",
-                "name": "King Pro 40K",
-                "image": "https://melhoresvape.pt/images/products/vapsolo-king-pro-40k-vape-descartavel-portugal.png",
-                "description": "Elegância e rendimento num vape descartável pensado para durar até 40000 puffs.",
-                "url": "https://vapeportugal.pt/products/vapsolo-king-pro-40k-vape-descartavel-portugal",
-                "category": "Vapes descartáveis",
-                "brand": {
-                  "@type": "Brand",
-                  "name": "VapSolo"
-                },
-                "additionalProperty": [
-                  {
-                    "@type": "PropertyValue",
-                    "name": "Puffs",
-                    "value": "40000 puffs"
-                  }
-                ]
-              }
+              "name": "King Pro 40K",
+              "url": "https://vapeportugal.pt/products/vapsolo-king-pro-40k-vape-descartavel-portugal"
             },
             {
               "@type": "ListItem",
               "position": 4,
-              "item": {
-                "@type": "Product",
-                "@id": "https://melhoresvape.pt/#product-panda-x-40k",
-                "name": "Panda X 40K",
-                "image": "https://melhoresvape.pt/images/products/merrymi-panda-x-40k-vape-descartavel-portugal.png",
-                "description": "Vape descartável com nicotina e perfil de framboesa, pensado para muitos puffs.",
-                "url": "https://vapeportugal.pt/products/merrymi-panda-x-40k-vape-descartavel-portugal",
-                "category": "Vapes descartáveis",
-                "brand": {
-                  "@type": "Brand",
-                  "name": "MerryMi"
-                },
-                "additionalProperty": [
-                  {
-                    "@type": "PropertyValue",
-                    "name": "Puffs",
-                    "value": "40000 puffs"
-                  }
-                ]
-              }
+              "name": "Panda X 40K",
+              "url": "https://vapeportugal.pt/products/merrymi-panda-x-40k-vape-descartavel-portugal"
             },
             {
               "@type": "ListItem",
               "position": 5,
-              "item": {
-                "@type": "Product",
-                "@id": "https://melhoresvape.pt/#product-kitty-20k",
-                "name": "Kitty 20K",
-                "image": "https://melhoresvape.pt/images/products/merrymi-kitty-20k-vape-descartavel-portugal.png",
-                "description": "Design compacto para uso simples, ideal para quem procura um vape com nicotina sem abdicar do sabor.",
-                "url": "https://vapeportugal.pt/collections/merrymi-vapes-descartaveis-portugal",
-                "category": "Vapes descartáveis",
-                "brand": {
-                  "@type": "Brand",
-                  "name": "MerryMi"
-                },
-                "additionalProperty": [
-                  {
-                    "@type": "PropertyValue",
-                    "name": "Puffs",
-                    "value": "20000 puffs"
-                  }
-                ]
-              }
+              "name": "Kitty 20K",
+              "url": "https://vapeportugal.pt/collections/merrymi-vapes-descartaveis-portugal"
             },
             {
               "@type": "ListItem",
               "position": 6,
-              "item": {
-                "@type": "Product",
-                "@id": "https://melhoresvape.pt/#product-mecha-x-28k",
-                "name": "Mecha X 28K",
-                "image": "https://melhoresvape.pt/images/products/merrymi-mecha-x-28k-vape-descartavel-portugal.png",
-                "description": "Sabores de vape intensos num formato vape descartável que mantém a potência até 28K puffs.",
-                "url": "https://vapeportugal.pt/products/merrymi-mecha-x-28k-vape-descartavel-portugal",
-                "category": "Vapes descartáveis",
-                "brand": {
-                  "@type": "Brand",
-                  "name": "MerryMi"
-                },
-                "additionalProperty": [
-                  {
-                    "@type": "PropertyValue",
-                    "name": "Puffs",
-                    "value": "28000 puffs"
-                  }
-                ]
-              }
+              "name": "Mecha X 28K",
+              "url": "https://vapeportugal.pt/products/merrymi-mecha-x-28k-vape-descartavel-portugal"
             },
             {
               "@type": "ListItem",
               "position": 7,
-              "item": {
-                "@type": "Product",
-                "@id": "https://melhoresvape.pt/#product-quads-4-em-1-120k",
-                "name": "Quads 4 em 1 120K",
-                "image": "https://melhoresvape.pt/images/products/jnr-quads-4-em-1-120k-vape-descartavel-portugal.png",
-                "description": "Muitos puffs num vape descartável premium para adultos que procuram maior autonomia.",
-                "url": "https://vapeportugal.pt/products/jnr-quads-120k-vape-descartavel-portugal",
-                "category": "Vapes descartáveis",
-                "brand": {
-                  "@type": "Brand",
-                  "name": "JNR"
-                },
-                "additionalProperty": [
-                  {
-                    "@type": "PropertyValue",
-                    "name": "Puffs",
-                    "value": "120000 puffs"
-                  }
-                ]
-              }
+              "name": "Quads 4 em 1 120K",
+              "url": "https://vapeportugal.pt/products/jnr-quads-120k-vape-descartavel-portugal"
             },
             {
               "@type": "ListItem",
               "position": 8,
-              "item": {
-                "@type": "Product",
-                "@id": "https://melhoresvape.pt/#product-ragegorilla-55k",
-                "name": "RageGorilla 55K",
-                "image": "https://melhoresvape.pt/images/products/jnr-ragegorilla-55k-vape-descartavel-portugal.png",
-                "description": "Um clássico renovado com sabor kiwi e melancia e muitos puffs consistentes.",
-                "url": "https://vapeportugal.pt/products/jnr-ragegorilla-55k-vape-descartavel-portugal",
-                "category": "Vapes descartáveis",
-                "brand": {
-                  "@type": "Brand",
-                  "name": "JNR"
-                },
-                "additionalProperty": [
-                  {
-                    "@type": "PropertyValue",
-                    "name": "Puffs",
-                    "value": "55000 puffs"
-                  }
-                ]
-              }
+              "name": "RageGorilla 55K",
+              "url": "https://vapeportugal.pt/products/jnr-ragegorilla-55k-vape-descartavel-portugal"
             },
             {
               "@type": "ListItem",
               "position": 9,
-              "item": {
-                "@type": "Product",
-                "@id": "https://melhoresvape.pt/#product-triple-3-em-1-110k",
-                "name": "Triple 3 em 1 110K",
-                "image": "https://melhoresvape.pt/images/products/jnr-triple-3-em-1-110k-vape-descartavel-portugal.png",
-                "description": "Estilo marcante e sabor intenso para quem procura um vaper com carácter.",
-                "url": "https://vapeportugal.pt/products/jnr-triple-110k-vape-descartavel-portugal",
-                "category": "Vapes descartáveis",
-                "brand": {
-                  "@type": "Brand",
-                  "name": "JNR"
-                },
-                "additionalProperty": [
-                  {
-                    "@type": "PropertyValue",
-                    "name": "Puffs",
-                    "value": "110000 puffs"
-                  }
-                ]
-              }
+              "name": "Triple 3 em 1 110K",
+              "url": "https://vapeportugal.pt/products/jnr-triple-110k-vape-descartavel-portugal"
             },
             {
               "@type": "ListItem",
               "position": 10,
-              "item": {
-                "@type": "Product",
-                "@id": "https://melhoresvape.pt/#product-eco-2-em-1-50k",
-                "name": "Eco 2 em 1 50K",
-                "image": "https://melhoresvape.pt/images/products/fumot-eco-2-em-1-50k-vape-descartavel-portugal.png",
-                "description": "Fumot Eco 2 em 1 50K: vape descartável com sabor cactus ice e muitos puffs intensos.",
-                "url": "https://vapeportugal.pt/products/fumot-eco-50k-vape-descartavel-portugal",
-                "category": "Vapes descartáveis",
-                "brand": {
-                  "@type": "Brand",
-                  "name": "Fumot"
-                },
-                "additionalProperty": [
-                  {
-                    "@type": "PropertyValue",
-                    "name": "Puffs",
-                    "value": "50000 puffs"
-                  }
-                ]
-              }
+              "name": "Eco 2 em 1 50K",
+              "url": "https://vapeportugal.pt/products/fumot-eco-50k-vape-descartavel-portugal"
             },
             {
               "@type": "ListItem",
               "position": 11,
-              "item": {
-                "@type": "Product",
-                "@id": "https://melhoresvape.pt/#product-tornado-15k",
-                "name": "Tornado 15K",
-                "image": "https://melhoresvape.pt/images/products/fumot-tornado-15k-vape-descartavel-portugal.png",
-                "description": "Tornado 15K: vape com nicotina de perfil equilibrado e puffs consistentes.",
-                "url": "https://vapeportugal.pt/products/fumot-tornado-15k-vape-descartavel-portugal",
-                "category": "Vapes descartáveis",
-                "brand": {
-                  "@type": "Brand",
-                  "name": "Fumot"
-                },
-                "additionalProperty": [
-                  {
-                    "@type": "PropertyValue",
-                    "name": "Puffs",
-                    "value": "15000 puffs"
-                  }
-                ]
-              }
+              "name": "Tornado 15K",
+              "url": "https://vapeportugal.pt/products/fumot-tornado-15k-vape-descartavel-portugal"
             },
             {
               "@type": "ListItem",
               "position": 12,
-              "item": {
-                "@type": "Product",
-                "@id": "https://melhoresvape.pt/#product-t9000-9k",
-                "name": "T9000 9K",
-                "image": "https://melhoresvape.pt/images/products/fumot-t9000-9k-vape-descartavel-portugal.png",
-                "description": "T9000 9K: perfil suave para adultos que preferem sabor a melancia gelada.",
-                "url": "https://vapeportugal.pt/products/fumot-t9000-9k-vape-descartavel-portugal",
-                "category": "Vapes descartáveis",
-                "brand": {
-                  "@type": "Brand",
-                  "name": "Fumot"
-                },
-                "additionalProperty": [
-                  {
-                    "@type": "PropertyValue",
-                    "name": "Puffs",
-                    "value": "9000 puffs"
-                  }
-                ]
-              }
+              "name": "T9000 9K",
+              "url": "https://vapeportugal.pt/products/fumot-t9000-9k-vape-descartavel-portugal"
             },
             {
               "@type": "ListItem",
               "position": 13,
-              "item": {
-                "@type": "Product",
-                "@id": "https://melhoresvape.pt/#product-adl-pro-360-20k",
-                "name": "ADL Pro 360 20K",
-                "image": "https://melhoresvape.pt/images/products/adalya-adl-pro-360-20k-vape-descartavel-portugal.png",
-                "description": "ADL Pro 360 20K: notas doces e exóticas num vape descartável com 20000 puffs.",
-                "url": "https://vapeportugal.pt/products/adalya-adl-pro-360-20k-vape-descartavel-portugal",
-                "category": "Vapes descartáveis",
-                "brand": {
-                  "@type": "Brand",
-                  "name": "Adalya"
-                },
-                "additionalProperty": [
-                  {
-                    "@type": "PropertyValue",
-                    "name": "Puffs",
-                    "value": "20000 puffs"
-                  }
-                ]
-              }
+              "name": "ADL Pro 360 20K",
+              "url": "https://vapeportugal.pt/products/adalya-adl-pro-360-20k-vape-descartavel-portugal"
             },
             {
               "@type": "ListItem",
               "position": 14,
-              "item": {
-                "@type": "Product",
-                "@id": "https://melhoresvape.pt/#product-adalya-adl16000-16k",
-                "name": "Adalya ADL16000 16K",
-                "image": "https://melhoresvape.pt/images/products/adalya-adl16000-16k-vape-descartavel-portugal.png",
-                "description": "Adalya ADL16000 16K: perfil fresco com muitos puffs leves.",
-                "url": "https://vapeportugal.pt/products/adalya-adl16000-16k-vape-descartavel-portugal",
-                "category": "Vapes descartáveis",
-                "brand": {
-                  "@type": "Brand",
-                  "name": "Adalya"
-                },
-                "additionalProperty": [
-                  {
-                    "@type": "PropertyValue",
-                    "name": "Puffs",
-                    "value": "16000 puffs"
-                  }
-                ]
-              }
+              "name": "Adalya ADL16000 16K",
+              "url": "https://vapeportugal.pt/products/adalya-adl16000-16k-vape-descartavel-portugal"
             },
             {
               "@type": "ListItem",
               "position": 15,
-              "item": {
-                "@type": "Product",
-                "@id": "https://melhoresvape.pt/#product-crown-bar-ehose-x-60k",
-                "name": "Crown Bar EHose X 60K",
-                "image": "https://melhoresvape.pt/images/products/al-fakher-crown-bar-ehose-x-60k-vape-descartavel-portugal.png",
-                "description": "Crown Bar EHose X 60K: 60000 puffs com notas de frutos silvestres e vape com nicotina de perfil equilibrado.",
-                "url": "https://vapeportugal.pt/products/al-fakher-crown-bar-e-hose-x-60k-vape-descartavel-portugal",
-                "category": "Vapes descartáveis",
-                "brand": {
-                  "@type": "Brand",
-                  "name": "Al Fakher"
-                },
-                "additionalProperty": [
-                  {
-                    "@type": "PropertyValue",
-                    "name": "Puffs",
-                    "value": "60000 puffs"
-                  }
-                ]
-              }
+              "name": "Crown Bar EHose X 60K",
+              "url": "https://vapeportugal.pt/products/al-fakher-crown-bar-e-hose-x-60k-vape-descartavel-portugal"
             },
             {
               "@type": "ListItem",
               "position": 16,
-              "item": {
-                "@type": "Product",
-                "@id": "https://melhoresvape.pt/#product-airmez-12k",
-                "name": "AirMez 12K",
-                "image": "https://melhoresvape.pt/images/products/airmez-12k-vape-descartavel-portugal.png",
-                "description": "AirMez 12K: sabor expressivo e muitos puffs num formato prático.",
-                "url": "https://vapeportugal.pt/products/airmez-12k-vape-descartavel-portugal",
-                "category": "Vapes descartáveis",
-                "brand": {
-                  "@type": "Brand",
-                  "name": "AirMez"
-                },
-                "additionalProperty": [
-                  {
-                    "@type": "PropertyValue",
-                    "name": "Puffs",
-                    "value": "12000 puffs"
-                  }
-                ]
-              }
+              "name": "AirMez 12K",
+              "url": "https://vapeportugal.pt/products/airmez-12k-vape-descartavel-portugal"
             },
             {
               "@type": "ListItem",
               "position": 17,
-              "item": {
-                "@type": "Product",
-                "@id": "https://melhoresvape.pt/#product-blur-15000-15k",
-                "name": "Blur 15000 15K",
-                "image": "https://melhoresvape.pt/images/products/blur-15000-15k-vape-descartavel-portugal.png",
-                "description": "Blur 15K: comodidade e puffs com sabor suave.",
-                "url": "https://vapeportugal.pt/products/blur-15k-vape-descartavel-portugal",
-                "category": "Vapes descartáveis",
-                "brand": {
-                  "@type": "Brand",
-                  "name": "Blur"
-                },
-                "additionalProperty": [
-                  {
-                    "@type": "PropertyValue",
-                    "name": "Puffs",
-                    "value": "15000 puffs"
-                  }
-                ]
-              }
+              "name": "Blur 15000 15K",
+              "url": "https://vapeportugal.pt/products/blur-15k-vape-descartavel-portugal"
             },
             {
               "@type": "ListItem",
               "position": 18,
-              "item": {
-                "@type": "Product",
-                "@id": "https://melhoresvape.pt/#product-ghost-galaxy-25k",
-                "name": "Ghost Galaxy 25K",
-                "image": "https://melhoresvape.pt/images/products/ghost-galaxy-25k-vape-descartavel-portugal.png",
-                "description": "Ghost Galaxy 25K: uma opção de vape com sabores de vape marcantes.",
-                "url": "https://vapeportugal.pt/products/ghost-galaxy-25k-vape-descartavel-portugal",
-                "category": "Vapes descartáveis",
-                "brand": {
-                  "@type": "Brand",
-                  "name": "Ghost"
-                },
-                "additionalProperty": [
-                  {
-                    "@type": "PropertyValue",
-                    "name": "Puffs",
-                    "value": "25000 puffs"
-                  }
-                ]
+              "name": "Ghost Galaxy 25K",
+              "url": "https://vapeportugal.pt/products/ghost-galaxy-25k-vape-descartavel-portugal"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://melhoresvape.pt/#faq",
+          "inLanguage": "pt-PT",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "O que é a MelhoresVape.pt?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A MelhoresVape.pt reúne vapes descartáveis, sabores de vape e opções sem nicotina para adultos em Portugal."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "A MelhoresVape.pt é uma loja online?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A página apresenta marcas, modelos e links para coleções e produtos disponíveis em VapePortugal.pt."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Que marcas e modelos são apresentados nesta página?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A página apresenta marcas como VapSolo, MerryMi, JNR, Fumot, Adalya, Al Fakher, Blur, AirMez e Ghost, com modelos como Master 70K, Panda X 40K e Tornado 15K."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Onde posso ver os produtos e as coleções?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Os botões \"Comprar agora\" e os links de coleção encaminham para páginas de produto e coleção em VapePortugal.pt."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Para quem é o conteúdo desta página?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O conteúdo desta página destina-se apenas a adultos com 18 anos ou mais."
               }
             }
           ]
@@ -572,9 +296,9 @@
       </div>
     </div>
 
-    <h1 class="warn">
+    <p class="warn">
       ADVERTÊNCIA: ESTE PRODUTO CONTÉM NICOTINA. A NICOTINA É UMA SUBSTÂNCIA VICÍANTE.
-    </h1>
+    </p>
     <nav class="navbar">
       <div class="container nav-container">
         <button class="hamburger-menu" id="hamburger-btn" aria-label="Menu" aria-controls="nav-links"
@@ -1196,6 +920,62 @@
             e sem promessas de saúde.
           </p>
           <p class="toggle-link"><a href="#home">Ver menos</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews-section" id="faq">
+      <div class="container">
+        <h2 class="section-title center-text">Perguntas frequentes</h2>
+        <div class="reviews-wrapper">
+          <article class="review-card">
+            <div class="review-header">
+              <div class="author-info">
+                <h3>O que é a MelhoresVape.pt?</h3>
+              </div>
+            </div>
+            <p class="review-text">A MelhoresVape.pt reúne vapes descartáveis, sabores de vape e opções sem nicotina
+              para adultos em Portugal.</p>
+          </article>
+
+          <article class="review-card">
+            <div class="review-header">
+              <div class="author-info">
+                <h3>A MelhoresVape.pt é uma loja online?</h3>
+              </div>
+            </div>
+            <p class="review-text">A página apresenta marcas, modelos e links para coleções e produtos disponíveis em
+              VapePortugal.pt.</p>
+          </article>
+
+          <article class="review-card">
+            <div class="review-header">
+              <div class="author-info">
+                <h3>Que marcas e modelos são apresentados nesta página?</h3>
+              </div>
+            </div>
+            <p class="review-text">A página apresenta marcas como VapSolo, MerryMi, JNR, Fumot, Adalya, Al Fakher,
+              Blur, AirMez e Ghost, com modelos como Master 70K, Panda X 40K e Tornado 15K.</p>
+          </article>
+
+          <article class="review-card">
+            <div class="review-header">
+              <div class="author-info">
+                <h3>Onde posso ver os produtos e as coleções?</h3>
+              </div>
+            </div>
+            <p class="review-text">Os botões "Comprar agora" e os links de coleção encaminham para páginas de produto e
+              coleção em VapePortugal.pt.</p>
+          </article>
+
+          <article class="review-card">
+            <div class="review-header">
+              <div class="author-info">
+                <h3>Para quem é o conteúdo desta página?</h3>
+              </div>
+            </div>
+            <p class="review-text">O conteúdo desta página destina-se apenas a adultos com 18 anos ou mais.</p>
+          </article>
         </div>
       </div>
     </section>
